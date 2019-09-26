@@ -23,7 +23,7 @@ RUN curl -jkSL -o /tmp/apache-tomcat.tar.gz http://archive.apache.org/dist/tomca
 RUN apk del curl && \
     rm -rf /tmp/* /var/cache/apk/*
 
-EXPOSE 8009
+EXPOSE 8080
 
 COPY startup.sh /opt/startup.sh
 
